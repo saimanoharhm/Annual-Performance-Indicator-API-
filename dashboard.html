@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing-Page</title>
+    <link rel="stylesheet" href="index.css" />
+    <!-- Phosphor Icons Pack -->
+    <script src="https://unpkg.com/phosphor-icons"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="header">
+        <div class="nav-left">
+          <nav class="nav-bar">
+            <i class="ph-list-bold nav-icon icon--big show-modal"></i>
+          </nav>
+          <a href="#">
+            <img
+              src="img/sathyabama-logo.jpg"
+              alt="sathyabama-logo"
+              class="nav-img"
+            />
+          </a>
+        </div>
+        <nav class="main-nav">
+          <i class="ph-bell nav-icon"></i>
+          <div>
+            <h3 class="user-name">Annam Sai Manohar</h3>
+          </div>
+          <img src="img/1.jpg" alt="user-photo" class="nav-img" />
+          <i class="ph-caret-down-bold nav-icon" size=""></i>
+        </nav>
+      </div>
+      <div>
+        <div class="modal hidden">
+          <button class="close-modal">&times;</button>
+          <div class="side-bar_inside">
+            <div class="side-bar-link">
+              <a href="#">DASHBOARD</a>
+            </div>
+            <div class="side-bar-link">
+              <a href="#">LEADERBOARD</a>
+            </div>
+            <div class="side-bar-link">
+              <a href="#">SSCORE</a>
+            </div>
+            <div class="side-bar-link">
+              <a href="#">SCORE A</a>
+            </div>
+            <div class="side-bar-link">
+              <a href="#">SCORE B</a>
+            </div>
+            <div class="side-bar-link">
+              <a href="#">SCORE C</a>
+            </div>
+          </div>
+        </div>
+        <div class="overlay hidden"></div>
+      </div>
+    </nav>
+    <section class="dashboard">
+      <h2 class="secondary-heading">Top Faculty</h2>
+      <div class="testimonial-section">
+        <h2 class="terinary-heading">Faculty of the Day</h2>
+        <div class="grid-2-cols">
+          <img src="img/1.jpg" alt="faculty-photo" class="faculty-photo" />
+          <aside class="testimonial-box">
+            <div class="individual-detail">
+              <p>Name: <span>Annam Sai Manohar</span></p>
+            </div>
+            <div class="individual-detail">
+              <p>
+                Dept:
+                <span class="margin-left"
+                  >Computer Science and Engineering</span
+                >
+              </p>
+            </div>
+            <div class="individual-detail">
+              <p>Rank: <span class="margin-left">1</span></p>
+            </div>
+          </aside>
+        </div>
+      </div>
+      <div class="testimonial-section">
+        <h2 class="terinary-heading">Faculty of the Month</h2>
+        <div class="grid-2-cols">
+          <img src="img/2.jpg" alt="faculty-photo" class="faculty-photo" />
+          <aside class="testimonial-box">
+            <div class="individual-detail">
+              <p>Name: <span>Annam Sai Manohar</span></p>
+            </div>
+            <div class="individual-detail">
+              <p>
+                Dept:
+                <span class="margin-left"
+                  >Computer Science and Engineering</span
+                >
+              </p>
+            </div>
+            <div class="individual-detail">
+              <p>Rank: <span class="margin-left">1</span></p>
+            </div>
+          </aside>
+        </div>
+      </div>
+      <div class="testimonial-section">
+        <h2 class="terinary-heading">Faculty of the Year</h2>
+        <div class="grid-2-cols">
+          <img src="img/3.jpg" alt="faculty-photo" class="faculty-photo" />
+          <aside class="testimonial-box">
+            <div class="individual-detail">
+              <p>Name: <span>Annam Sai Manohar</span></p>
+            </div>
+            <div class="individual-detail">
+              <p>
+                Dept:
+                <span class="margin-left"
+                  >Computer Science and Engineering</span
+                >
+              </p>
+            </div>
+            <div class="individual-detail">
+              <p>Rank: <span class="margin-left">1</span></p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+    <section class="feedback-section">
+      <h2 class="secondary-heading">Feedback Form</h2>
+      <p class="terinary-text">
+        Help us by providing your valuable feedback to improve the application.
+      </p>
+      <p class="terinary-text rating-header">Rating</p>
+      <ul class="rating">
+        <li class="rating--list">
+          <input type="radio" id="one" name="rating" value="one" />
+          <label for="one">1</label><br />
+        </li>
+        <li class="rating--list">
+          <input type="radio" id="two" name="rating" value="two" />
+          <label for="two">2</label><br />
+        </li>
+        <li class="rating--list">
+          <input type="radio" id="three" name="rating" value="three" />
+          <label for="javascript">3</label><br />
+        </li>
+        <li class="rating--list">
+          <input type="radio" id="four" name="rating" value="four" />
+          <label for="four">4</label><br />
+        </li>
+        <li class="rating--list">
+          <input type="radio" id="five" name="rating" value="five" />
+          <label for="five">5</label><br />
+        </li>
+      </ul>
+      <div class="suggestions">
+        <label for="suggestion" class="terinary-text suggestion"
+          >Suggestions</label
+        >
+        <textarea
+          id="suggestion"
+          name="suggestion"
+          rows="4"
+          cols="50"
+        ></textarea>
+        <button class="btn-button btn--feedback">Submit</button>
+      </div>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>

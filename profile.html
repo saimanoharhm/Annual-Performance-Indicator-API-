@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="index.css" />
+    <!-- Phosphor Icons Pack -->
+    <script src="https://unpkg.com/phosphor-icons"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="header">
+        <div class="nav-left">
+          <nav class="nav-bar">
+            <i class="ph-list-bold nav-icon icon--big show-modal"></i>
+          </nav>
+          <a href="#">
+            <img
+              src="img/sathyabama-logo.jpg"
+              alt="sathyabama-logo"
+              class="nav-img"
+            />
+          </a>
+        </div>
+        <nav class="main-nav">
+          <i class="ph-bell nav-icon"></i>
+          <div>
+            <h3 class="user-name">Annam Sai Manohar</h3>
+          </div>
+          <img src="img/1.jpg" alt="user-photo" class="nav-img" />
+          <i class="ph-caret-down-bold nav-icon" size=""></i>
+        </nav>
+      </div>
+      <div>
+        <div class="modal hidden">
+          <button class="close-modal">&times;</button>
+          <div class="side-bar_inside">
+            <div class="side-bar-link">
+              <a href="#">DASHBOARD</a>
+            </div>
+            <div class="side-bar-link">
+              <a href="#">LEADERBOARD</a>
+            </div>
+            <div class="side-bar-link">
+              <a href="#">SSCORE</a>
+            </div>
+            <div class="side-bar-link">
+              <a href="#">SCORE A</a>
+            </div>
+            <div class="side-bar-link">
+              <a href="#">SCORE B</a>
+            </div>
+            <div class="side-bar-link">
+              <a href="#">SCORE C</a>
+            </div>
+          </div>
+        </div>
+        <div class="overlay hidden"></div>
+      </div>
+    </nav>
+    <section class="profile-section">
+      <h2 class="secondary-heading profile-text">Profile</h2>
+      <form class="profile-detail">
+        <div class="profile-details">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="input-1"
+            placeholder="Enter the Full Name"
+          /><br />
+        </div>
+        <div class="profile-details">
+          <label for="email">Email:</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            class="input-2"
+            placeholder="Enter the Email"
+          /><br />
+        </div>
+        <div class="profile-details">
+          <label for="city">City/Town:</label>
+          <input
+            type="text"
+            id="city"
+            name="city"
+            class="input-3"
+            placeholder="Enter the City/Town"
+          /><br />
+        </div>
+        <div class="profile-details">
+          <label for="dept">Department:</label>
+          <input
+            type="text"
+            id="dept"
+            name="dept"
+            class="input-4"
+            placeholder="Enter the Department"
+          /><br />
+        </div>
+        <div class="profile-details">
+          <label for="gender">Gender:</label>
+          <input
+            type="text"
+            id="gender"
+            name="gender"
+            class="input-5"
+            placeholder="Enter the Gender"
+          /><br />
+        </div>
+        <div class="profile-btn">
+          <button class="btn-button btn-profile">Update Profile</button>
+        </div>
+      </form>
+    </section>
+    <script src="index.js"></script>
+  </body>
+</html>
