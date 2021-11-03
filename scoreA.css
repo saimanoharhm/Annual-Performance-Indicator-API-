@@ -1,0 +1,271 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Font weights
+Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
+
+- Line heights
+Default: 1
+Small: 1.05
+Medium: 1.2
+Paragraph default: 1.6
+
+- Letter spacing
+-0.5px
+0.75px
+--- 06 BORDER-RADIUS
+
+Default: 9px
+Medium: 11px
+
+--- 07 WHITESPACE
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+:root {
+  --primary: #f76707;
+  --dark: #311501;
+  --pure: #ffffff;
+  --ternary: #ad4805;
+  --light: #fff9f5;
+  --secondary: #f99551;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Rubik", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+  background-color: var(--light);
+}
+html {
+  font-size: 62.5%;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf2e9;
+  /* Because we want header to be sticky later */
+  height: 9.6rem;
+  padding: 0 4.8rem;
+}
+
+/**Dropdown css*/
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  right: 5px;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: var(--secondary);
+  right: 5px;
+}
+
+/**************************/
+/* NAVIGATION */
+/**************************/
+
+.nav-img {
+  height: 4.2rem;
+}
+img {
+  width: 100%;
+  height: 45.5rem;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+  background-size: cover;
+  background-position: center;
+}
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 3.3rem;
+}
+.main-nav {
+  display: flex;
+  gap: 2.2rem;
+  align-items: center;
+}
+
+.main-nav .nav-img {
+  width: 5.2rem;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.nav-icon,
+.nav-icon:visited {
+  text-decoration: none;
+  color: #311501;
+  font-size: 2.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.nav-icon:hover,
+.nav-icon:active {
+  font-weight: 800;
+  color: #cf711f;
+}
+
+.icon--big {
+  font-size: 4.6rem;
+}
+
+.user-name,
+.user-name:visited {
+  text-decoration: none;
+  font-size: 1.8rem;
+  color: #311501;
+  font-weight: 600;
+}
+
+.user-name:hover,
+.user-name:active {
+  font-weight: 800;
+  color: #cf711f;
+}
+
+.sscore-title {
+  text-align: center;
+  margin-top: 5rem;
+  font-size: 24px;
+  letter-spacing: 1.9rem;
+}
+.score-data {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.side-bar_inside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.side-bar-link {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  background-color: var(--light);
+  transition: all 0.5s;
+}
+.side-bar-link a {
+  text-decoration: none;
+  color: #311501;
+  font-size: 2.2rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.side-bar-link:hover,
+.side-bar-link:active {
+  cursor: pointer;
+  background-color: var(--secondary);
+}
+.show-modal {
+  padding: 1.75rem 3.5rem;
+  margin: 3rem 2rem;
+  border: none;
+
+  color: #444;
+  border-radius: 10rem;
+  cursor: pointer;
+}
+
+.close-modal {
+  position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.hidden {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  background-color: var(--light);
+  padding: 6rem;
+  border-radius: 5px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(15px);
+  z-index: 5;
+}
+.testimonial-box {
+  background-color: var(--secondary);
+  font-size: 17px;
+  color: var(--light);
+  display: inline-block;
+  text-align: left;
+  padding: 4rem;
+  border-radius: 3px;
+  line-height: 2;
+  box-shadow: 0.1rem 0.1rem 1rem 0.1rem #999;
+}
+.testimonial-text {
+  margin-left: 3rem;
+}
+.testimonial-dept {
+  margin-left: 1.5rem;
+}
