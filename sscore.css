@@ -255,17 +255,28 @@ img {
 .testimonial-box {
   background-color: var(--secondary);
   font-size: 17px;
-  color: var(--light);
+  color: var(--pure);
   display: inline-block;
   text-align: left;
-  padding: 4rem;
+  /* padding: 4rem; */
   border-radius: 3px;
   line-height: 2;
   box-shadow: 0.1rem 0.1rem 1rem 0.1rem #999;
 }
-.testimonial-text {
-  margin-left: 3rem;
+td {
+  border: 2px solid var(--dark);
+  width: 25%;
+  padding: 10px;
+  text-align: left;
+  background-color: var(--primary);
 }
-.testimonial-dept {
-  margin-left: 1.5rem;
+
+table {
+  border: 2px solid black;
+  border-collapse: collapse;
+
+  /* width: 90%; */
+}
+.table-head {
+  font-size: 2rem;
 }

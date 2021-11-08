@@ -40,7 +40,7 @@
             <button class="close-modal">&times;</button>
             <div class="side-bar_inside">
               <div class="side-bar-link">
-                <a href="sscore.html">DASHBOARD</a>
+                <a href="dashboard.html">DASHBOARD</a>
               </div>
               <div class="side-bar-link">
                 <a href="leaderboard.html" target="_blank"">LEADERBOARD</a>
@@ -72,12 +72,52 @@
     <div class="sscore-title"><h1>SCORE A</h1></div>
 
     <section class="score-data">
-      <div class="testimonial-box">
+      <!-- <div class="testimonial-box">
         <h2>NAME: <span class="testimonial-name">JUSTIN BIEBER</span></h2>
         <h2>DEPT:<span class="testimonial-dept">COMPUTER SCIENCE</span></h2>
         <h2>RANK: <span class="testimonial-rank">4</span></h2>
         <h2>POINTS:<span class="testimonial-points">666666</span></h2>
-      </div>
+      </div> -->
+      <table class="testimonial-box">
+        <tr>
+          <th>S.No</th>
+          <th>Activity Name</th>
+          <th>Points Alloted</th>
+          <th>No Activities</th>
+          <th>Points Scored</th>
+          <th>Upload Proof</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>E-material (National/International platforms like SWAYAM, Unacademy, Udemy, Coursera, etc)</td>
+          <td>20.00</td>
+          <td>  <label for="fname">No.Activities</label><br>
+            <input class="num-input" type="number" id="quantity" name="quantity" min="1" max="5"></td>
+          <td>00.00</td>
+          <td> <label for="myfile">Select a file:</label> <input type="file" id="myFile" name="filename"></td>
+        </tr>
+      
+        <tr>
+          <td>2</td>
+          <td>Iniating courses/Labs in new and emerging areas</td>
+          <td>20.00</td>
+          <td>  <label for="fname">No.Activities</label><br>
+            <input class="num-input"type="number" id="quantity" name="quantity" min="1" max="5"></td>
+          <td>00.00</td>
+          <td> <label for="myfile">Select a file:</label>
+             <input type="file" id="myFile" name="filename"></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Etrateaching activity</td>
+          <td>20.00</td>
+          <td>  <label for="fname">No.Activities</label><br>
+            <input class="num-input" type="number" id="quantity" name="quantity" min="1" max="5"></td>
+          <td>00.00</td>
+          <td> <label for="myfile">Select a file:</label> <input   type="file" id="myFile" name="filename"></td>
+        </tr>
+        
+      </table>
     </section>
     <script src="leaderboard.js"></script>
   </body>
