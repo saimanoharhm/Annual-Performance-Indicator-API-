@@ -169,6 +169,7 @@ img {
 .sscore-title {
   text-align: center;
   margin-top: 5rem;
+  margin-bottom: 2rem;
   font-size: 24px;
   letter-spacing: 1.9rem;
 }
@@ -253,19 +254,98 @@ img {
   z-index: 5;
 }
 .testimonial-box {
-  background-color: var(--secondary);
+  background-color: var(--light);
   font-size: 17px;
-  color: var(--light);
+  color: var(--dark);
   display: inline-block;
   text-align: left;
   padding: 4rem;
   border-radius: 3px;
   line-height: 2;
   box-shadow: 0.1rem 0.1rem 1rem 0.1rem #999;
+  border: 2px solid var(--secondary);
 }
-.testimonial-text {
+.num-input {
+  border: 2px solid var(--secondary);
+  border-radius: 3px;
+}
+.choose-file {
+  border: none;
+  background-color: none;
+}
+td {
+  border: 2px solid var(--dark);
+  width: 15%;
+  padding: 20px;
+  text-align: left;
+}
+th {
+  border: 2px solid var(--dark);
+  width: 15%;
+  padding: 10px;
+}
+table {
+  border-collapse: collapse;
+  width: 90%;
+}
+/* table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+} */
+/* .testimonial-text {
   margin-left: 3rem;
 }
 .testimonial-dept {
   margin-left: 1.5rem;
+} */
+.score-heading {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 2.5rem;
+  /* display: inline-block; */
+}
+.score-headings {
+  text-align: center;
+  margin-top: 12.5rem;
+  font-size: 2.5rem;
+}
+.leaderboard-pagination_next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left-right {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 2px solid var(--primary);
+  margin: 4.5rem 1.5rem 0 1rem;
+  transition: all 0.5s;
+}
+.left-right:hover,
+.left-right:active {
+  cursor: pointer;
+  background-color: var(--primary);
+}
+.pagination-list {
+  display: flex;
+  list-style: none;
+  margin: 4.5rem 1.5rem 0 0;
+}
+
+.leaderboard-pagination {
+  margin-bottom: 1rem;
+}
+.pagination-items {
+  width: 2rem;
+  font-size: 1.5rem;
+  padding: 1rem;
+  margin: 0 0.5rem 0 0.5rem;
 }
